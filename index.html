@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Basic with Nico</title>
+</head>
+
+<body>
+    <div id="root"></div>
+</body>
+<script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script> <!-- making interactive UI-->
+<script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+<!-- put react el on HTML, translate react to javascript -->
+<!-- This one is hard way not easy way which people use generally -->
+<script>
+    // react는 원하는 HTML을 업데이트 할 수 있다
+    const root = document.getElementById("root");
+    const span = React.createElement(
+        "span",
+        { id: "sexy-span", style: { color: "red" } },
+        "Hello, I am a span"
+    ); // html tag name, property
+    ReactDOM.render(span, root);
+</script>
+
+</html>
