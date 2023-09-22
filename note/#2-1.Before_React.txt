@@ -1,5 +1,0 @@
-기본 바닐라 JS 
-    1. HTML 만들고
-    2. Bring Javascript
-    3. listen event listener
-    4. update HTML
