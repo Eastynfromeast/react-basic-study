@@ -1,2 +1,21 @@
 # State
     State? data that changes
+
+connect to the variable by curly bracket 
+need to refresh the UI == rerendering == show a new version of Container
+
+render()? weird way of rerendering UI
+
+Power of React!
+    Vanilla JS changes the whole,
+    React updates only the differences!
+
+modify the data and render AGAIN
+the best way to automatically trigger rerender
+
+console.log(data); // receive an array => [value, function]
+const food = ["pizza","tomato"];
+const [myFav, secondFav] = food;
+[data, setData] data name you want to change and new value of the data
+
+useState() <- automatically trigger RE-RENDER
