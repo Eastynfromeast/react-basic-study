@@ -1,0 +1,8 @@
+# create-react-app
+    create a lot of script and a lot of pre-configuration ready for you
+    can publish website in easy and cool way
+
+    npx create-react-app react-app-name
+
+    node.js 
+        package.json - can check every scripts
