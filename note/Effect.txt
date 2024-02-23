@@ -1,0 +1,18 @@
+# useState
+
+  Sometimes, you want to be able run some code only on the first render 
+    ex. get the data from API
+  
+    How useEffect works
+      function useEffect(effect: EffectCallback, deps?: DependencyList)
+      useEffect(function, [array? ]);
+      execute some codes only when some specific state changes
+  useEffect(() => {
+		console.log("SEARCH FOR", keyword);
+	}, [keyword]); // telling JS plz watching "keyword"
+
+  console.log 가 두번씩 찍히는 이유
+    A. In development mode React renders everything twice :) Nothing is wrong with your code.
+    this is only for development mode. useEffect will not be called twice in production, only when we are on `localhost`
+
+    useEffect runs a function when the props change, or only at the start or end of the component's lifecycle.
