@@ -44,21 +44,40 @@ Sometimes, you want to be able run some code only on the first render
         Allows you to do sth when the component is destroyed
         has to return another function
 
-    useEffect allows us to choose when should the code run
+    ## useEffect allows us to choose when should the code run
         - only the first render
         - when something changed
         - when the component is destroyed == Cleanup function 
 
     Usually ppl write everything inside useEffect
 
-    useEffect(()=>{
-        console.log("hi :)");
-        return ()=> console.log("bye :(");
-    },[]);
-	
-    useEffect(() => {
-		console.log("hi :)");
-		return function () {
-			console.log("bye :(");
-		};
-	}, []);
+        useEffect(()=>{
+            console.log("hi :)");
+            return ()=> console.log("bye :(");
+        },[]);
+        
+        useEffect(() => {
+            console.log("hi :)");
+            return function () {
+                console.log("bye :(");
+            };
+        }, []);
+
+    Open curly brackets to write down JavaScript
+
+    ## Cleanup function 
+        when component is destroyed, "Cleanup function " can be executed!
+        Allows you to do sth when the component is destroyed
+        has to return another function
+
+        useEffect allows us to choose when should the code run
+        - only the first render
+        - when something changed
+        - when the component is destroyed == Cleanup function 
+
+        useEffect(() => {
+            console.log("hi :)");
+            return function () {
+                console.log("bye :(");
+            };
+        }, []);
